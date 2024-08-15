@@ -2,6 +2,8 @@
 <resources>
 
     <string name="app_name">SocksDroid</string>
+    <string name="advancedsettings">Advanced Settings</string>
+    <string name="advancedsettings_summary">Server IP, Authentication, Ports, IPv6, etc...</string>
     <string name="open_termux">Open Termux</string>
     <string name="open_termux_summary">This might be needed for some purpose, such as getting free internet.</string>
     <string name="notice">In order to use, enable all available option below, and add com.termux to App List !</string>
