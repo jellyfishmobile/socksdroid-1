@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="src">Xem mã nguồn</string>
+    <string name="open_termux">Mở Termux</string>
+    <string name="open_termux_summary">Termux có thể cần thiết trong 1 số mục đích cụ thể, ví dụ như sử dụng internet miễn phí.</string>
     <string name="src_title">Xem mã nguồn dự án trên GitLab</string>
     <string name="notice">Để sử dụng, hãy bật tất cả 3 tùy chọn dưới, và thêm com.termux vào danh sách ứng dụng nhé !</string>
     <string name="adv_app_bypass">Chế độ bỏ qua</string>

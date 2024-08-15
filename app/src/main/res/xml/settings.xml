@@ -12,6 +12,14 @@
         android:title="@string/connection">
         <Preference
             android:summary="@string/notice"/>
+        <PreferenceScreen
+            android:title="@string/open_termux"
+            android:summary="@string/open_termux_summary">
+            <intent
+                android:targetPackage="com.termux"
+                android:targetClass="com.termux.HomeActivity" />
+        </PreferenceScreen>
+
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="udp_proxy"
