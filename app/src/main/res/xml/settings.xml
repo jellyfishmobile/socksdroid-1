@@ -109,10 +109,10 @@
             android:summary="1.0.6" />
         <Preference
             android:title="@string/compiletime"
-            android:summary="2024-09-26" />
+            android:summary="YYYY-MM-DD" />
         <Preference
             android:title="Commit"
-            android:summary="f592cb40">
+            android:summary="">
             <intent
                 android:action="android.intent.action.VIEW"
                 android:data="https://gitlab.com/cuynu/socksdroid/-/commits/main/?ref_type=HEADS" />
