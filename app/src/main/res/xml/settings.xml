@@ -106,7 +106,7 @@
         android:title="@string/appinfo_category">
         <Preference
             android:title="@string/appversion"
-            android:summary="1.0.6" />
+            android:summary="1.0.7" />
         <Preference
             android:title="@string/compiletime"
             android:summary="YYYY-MM-DD" />
