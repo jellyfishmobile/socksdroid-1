@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <Preference
+        android:icon="@drawable/ic_gitlab"
         android:title="@string/src"
         android:summary="@string/src_title">
         <intent
@@ -10,31 +11,14 @@
     <PreferenceCategory
         android:selectable="false"
         android:title="@string/connection">
-        <Preference
-            android:summary="@string/notice"/>
         <PreferenceScreen
+            android:icon="@drawable/ic_termux"
             android:title="@string/open_termux"
             android:summary="@string/open_termux_summary">
             <intent
                 android:targetPackage="com.termux"
                 android:targetClass="com.termux.HomeActivity" />
         </PreferenceScreen>
-        <CheckBoxPreference
-            android:defaultValue="true"
-            android:key="udp_proxy"
-            android:title="@string/udp_proxy"
-            android:summary="@string/udp_proxy_sum"/>
-        <CheckBoxPreference
-            android:defaultValue="true"
-            android:key="adv_per_app"
-            android:title="@string/adv_per_app"/>
-        <CheckBoxPreference
-            android:enabled="true"
-            android:defaultValue="true"
-            android:key="adv_app_bypass"
-            android:title="@string/adv_app_bypass"
-            android:summary="@string/adv_app_bypass_sum"
-            android:dependency="adv_per_app"/>
         <EditTextPreference
             android:key="adv_app_list"
             android:title="@string/adv_app_list"
@@ -46,6 +30,22 @@
         <PreferenceScreen
             android:title="@string/advancedsettings"
             android:summary="@string/advancedsettings_summary">
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="udp_proxy"
+                android:title="@string/udp_proxy"
+                android:summary="@string/udp_proxy_sum"/>
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="adv_per_app"
+                android:title="@string/adv_per_app"/>
+            <CheckBoxPreference
+                android:enabled="true"
+                android:defaultValue="true"
+                android:key="adv_app_bypass"
+                android:title="@string/adv_app_bypass"
+                android:summary="@string/adv_app_bypass_sum"
+                android:dependency="adv_per_app"/>
             <EditTextPreference
                 android:key="adv_dns"
                 android:title="@string/adv_dns"
@@ -102,4 +102,20 @@
         </PreferenceScreen>
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:title="@string/appinfo_category">
+        <Preference
+            android:title="@string/appversion"
+            android:summary="1.0.6" />
+        <Preference
+            android:title="@string/compiletime"
+            android:summary="2024-09-26" />
+        <Preference
+            android:title="Commit"
+            android:summary="f592cb40">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://gitlab.com/cuynu/socksdroid/-/commits/main/?ref_type=HEADS" />
+        </Preference>
+    </PreferenceCategory>
 </PreferenceScreen>

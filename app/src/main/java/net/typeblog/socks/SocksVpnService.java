@@ -93,7 +93,7 @@ public class SocksVpnService extends VpnService {
                 new Intent(this, MainActivity.class), intentFlags);
         startForeground(NOTIFICATION_ID, builder
                 .setContentTitle(getString(R.string.notify_title))
-                .setContentText(String.format(getString(R.string.notify_msg), name))
+                .setContentText(String.format(  getString(R.string.notify_msg), name))
                 .setPriority(Notification.PRIORITY_MIN)
                 .setSmallIcon(R.drawable.ic_vpn)
                 .setContentIntent(contentIntent)
